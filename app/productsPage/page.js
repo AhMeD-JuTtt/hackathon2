@@ -28,7 +28,7 @@ export default async function Home() {
       </div>
       {data?.map((item) => {
         return (
-          <div>
+          <div key={item._id}>
             <div style={{display:"flex", justifyContent:"space-between", alignItems:"center" }}>
               {/* <div style={{display:"flex", justifyContent:"space-between" }}> */}
               <div style={{marginLeft:"50px"}}>

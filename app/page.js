@@ -29,9 +29,9 @@ export default async function Home() {
         <Link href="/" className="btn btn-info btn-lg" style={{margin:"50px"}}>Users</Link>
         <Link href="/productsPage" className="btn btn-info btn-lg" style={{margin:"50px"}}>Products</Link>
       </div>
-      {data?.map((item) => {
+      {data?.map((item, i) => {
         return (
-          <div>
+          <div key={item._id}>
             <div style={{display:"flex", justifyContent:"space-between", alignItems:"center" }}>
               {/* <div style={{display:"flex", justifyContent:"space-between" }}> */}
               <div style={{marginLeft:"50px"}}>
